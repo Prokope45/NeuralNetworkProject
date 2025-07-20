@@ -1,0 +1,7 @@
+,Coefficient
+Intercept,3.3430184134190006
+Time_spent_Alone,-2.7426919116587363
+Post_frequency,2.173858054122801
+Going_outside,3.856393770145429
+Social_event_attendance,4.754840899979665
+Going_outside:Social_event_attendance,-1.2264810670033048
