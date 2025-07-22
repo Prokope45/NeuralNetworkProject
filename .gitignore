@@ -1,3 +1,4 @@
 .venv
 .neuralVenv
 NeuralNetwork/**/__pycache__
+**/__pycache__
