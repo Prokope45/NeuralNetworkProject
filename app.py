@@ -21,14 +21,21 @@ for column in predictors:
         "min": min(pre_df[column])
     }
 
+humanized_label = {
+    "Time_spent_Alone": "Hours spent alone",
+    "Post_frequency": "Number of posts online",
+    "Going_outside": "Number of instances going outside",
+    "Social_event_attendance": "Number of social events attended"
+}
+
 result = {}
 for column in predictors:
-    humanized_label: str = ' '.join(column.lower().split('_')).capitalize()
+    # humanized_label: str = ' '.join(column.lower().split('_')).capitalize()
     value = st.slider(
-        humanized_label,
+        humanized_label[column],
         min_value=column_range[column]["min"],
         max_value=column_range[column]["max"],
-        value=column_range[column]["median"]
+        value=column_range[column]["median"],
     )
     result[column] = value
 
