@@ -30,7 +30,6 @@ humanized_label = {
 
 result = {}
 for column in predictors:
-    # humanized_label: str = ' '.join(column.lower().split('_')).capitalize()
     value = st.slider(
         humanized_label[column],
         min_value=column_range[column]["min"],
